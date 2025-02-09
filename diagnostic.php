@@ -11,7 +11,7 @@
 </head>
 <body>
   <div class="container">
-    <!-- Sidebar (same as previous) -->
+    <!-- Sidebar -->
     <nav class="sidebar">
       <header>
         <div class="image-text">
@@ -61,7 +61,7 @@
       </div>
     </nav>
 
-    <!-- Navbar (same as previous) -->
+    <!-- Navbar -->
     <nav class="navbar">
       <ul class="navbar-links">
         <li><a href="#">About Us</a></li>
@@ -75,25 +75,115 @@
         <p>Please fill out the diagnostic test results below.</p>
         <form action="#" method="post">
           <div class="form-grid">
-            <!-- Lab Tests Section -->
-            <h2 class="section-title">Lab Tests</h2>
+            <!-- Urinalysis Section -->
+            <h2 class="section-title">Urinalysis</h2>
             <div class="form-group">
-              <label for="urinalysis">Urinalysis Results</label>
-              <textarea id="urinalysis" name="urinalysis" placeholder="Enter urinalysis results"></textarea>
+              <label for="ur_color">Color</label>
+              <input type="text" id="ur_color" name="ur_color" placeholder="Enter urine color" required>
             </div>
             <div class="form-group">
-              <label for="fecalysis">Fecalysis Results</label>
-              <textarea id="fecalysis" name="fecalysis" placeholder="Enter fecalysis results"></textarea>
+              <label for="ur_transparency">Transparency</label>
+              <input type="text" id="ur_transparency" name="ur_transparency" placeholder="Enter transparency" required>
             </div>
             <div class="form-group">
-              <label for="xray">X‑ray Results</label>
-              <textarea id="xray" name="xray" placeholder="Enter X‑ray results"></textarea>
+              <label for="ur_hemoglobin">Hemoglobin</label>
+              <input type="text" id="ur_hemoglobin" name="ur_hemoglobin" placeholder="Enter hemoglobin level" required>
             </div>
             <div class="form-group">
-              <label for="blood_analysis">Blood Analysis Results</label>
-              <textarea id="blood_analysis" name="blood_analysis" placeholder="Enter blood analysis results"></textarea>
+              <label for="ur_hematocrit">Hematocrit</label>
+              <input type="text" id="ur_hematocrit" name="ur_hematocrit" placeholder="Enter hematocrit" required>
             </div>
-            <!-- Submit Button (spans both columns) -->
+            <div class="form-group">
+              <label for="ur_wbc">WBC</label>
+              <input type="text" id="ur_wbc" name="ur_wbc" placeholder="Enter WBC count" required>
+            </div>
+            <div class="form-group">
+              <label for="ur_pus">Pus</label>
+              <input type="text" id="ur_pus" name="ur_pus" placeholder="Enter pus cell count" required>
+            </div>
+            <div class="form-group">
+              <label for="ur_rbc">Red Blood Cell</label>
+              <input type="text" id="ur_rbc" name="ur_rbc" placeholder="Enter RBC count" required>
+            </div>
+            <div class="form-group">
+              <label for="ur_platelet">Platelet Count</label>
+              <input type="text" id="ur_platelet" name="ur_platelet" placeholder="Enter platelet count" required>
+            </div>
+            
+            <!-- Fecalysis Section -->
+            <h2 class="section-title">Fecalysis</h2>
+            <div class="form-group">
+              <label for="fec_color">Color</label>
+              <input type="text" id="fec_color" name="fec_color" placeholder="Enter fecal color" required>
+            </div>
+            <div class="form-group">
+              <label for="fec_consistency">Consistency</label>
+              <input type="text" id="fec_consistency" name="fec_consistency" placeholder="Enter consistency" required>
+            </div>
+            <div class="form-group">
+              <label for="fec_mucus">Mucus</label>
+              <input type="text" id="fec_mucus" name="fec_mucus" placeholder="Enter mucus presence" required>
+            </div>
+            <div class="form-group">
+              <label for="fec_blood">Blood</label>
+              <input type="text" id="fec_blood" name="fec_blood" placeholder="Enter blood presence" required>
+            </div>
+            <div class="form-group">
+              <label for="fec_parasites">Parasites</label>
+              <input type="text" id="fec_parasites" name="fec_parasites" placeholder="Enter parasites" required>
+            </div>
+            <div class="form-group">
+              <label for="fec_ova">Ova/Cysts</label>
+              <input type="text" id="fec_ova" name="fec_ova" placeholder="Enter ova or cysts" required>
+            </div>
+            
+            <!-- X‑ray Section -->
+            <h2 class="section-title">X‑ray</h2>
+            <div class="form-group">
+              <label for="xray_region">Region Examined</label>
+              <textarea id="xray_region" name="xray_region" placeholder="Enter region examined" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="xray_findings">Findings</label>
+              <textarea id="xray_findings" name="xray_findings" placeholder="Enter X‑ray findings" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="xray_impression">Impression</label>
+              <textarea id="xray_impression" name="xray_impression" placeholder="Enter impression" required></textarea>
+            </div>
+            <div class="form-group">
+              <label for="xray_recommendation">Recommendations</label>
+              <textarea id="xray_recommendation" name="xray_recommendation" placeholder="Enter recommendations" required></textarea>
+            </div>
+            
+            <!-- Blood Analysis Section -->
+            <h2 class="section-title">Blood Analysis</h2>
+            <div class="form-group">
+              <label for="blood_hemoglobin">Hemoglobin</label>
+              <input type="text" id="blood_hemoglobin" name="blood_hemoglobin" placeholder="Enter hemoglobin level" required>
+            </div>
+            <div class="form-group">
+              <label for="blood_hematocrit">Hematocrit</label>
+              <input type="text" id="blood_hematocrit" name="blood_hematocrit" placeholder="Enter hematocrit" required>
+            </div>
+            <div class="form-group">
+              <label for="blood_wbc">WBC Count</label>
+              <input type="text" id="blood_wbc" name="blood_wbc" placeholder="Enter WBC count" required>
+            </div>
+            <div class="form-group">
+              <label for="blood_rbc">RBC Count</label>
+              <input type="text" id="blood_rbc" name="blood_rbc" placeholder="Enter RBC count" required>
+            </div>
+            <div class="form-group">
+              <label for="blood_platelet">Platelet Count</label>
+              <input type="text" id="blood_platelet" name="blood_platelet" placeholder="Enter platelet count" required>
+            </div>
+            <div class="form-group">
+              <label for="blood_other">Other Findings</label>
+              <input type="text" id="blood_other" name="blood_other" placeholder="Enter any additional findings" required>
+            </div>
+            
+            <!-- Submit Button -->
             <div class="form-group full-width">
               <button type="submit">Submit Diagnostic Test</button>
             </div>
