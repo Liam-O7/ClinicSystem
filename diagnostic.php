@@ -75,6 +75,29 @@
         <p>Please fill out the diagnostic test results below.</p>
         <form action="#" method="post">
           <div class="form-grid">
+                        <!-- Patient Information Section -->
+                        <h2 class="section-title">Patient Information</h2>
+            <div class="form-group">
+              <label for="full_name">Full Name</label>
+              <input type="text" id="full_name" name="full_name" placeholder="Enter full name" required>
+            </div>
+            <div class="form-group">
+              <label for="dob">Date of Birth</label>
+              <input type="date" id="dob" name="dob" required>
+            </div>
+            <div class="form-group">
+              <label for="age">Age</label>
+              <input type="number" id="age" name="age" placeholder="Enter age" required>
+            </div>
+            <div class="form-group">
+              <label for="gender">Gender</label>
+              <select id="gender" name="gender" required>
+                <option value="">Select gender</option>
+                <option value="Male">Male</option>
+                <option value="Female">Female</option>
+                <option value="Other">Other</option>
+              </select>
+            </div>
             <!-- Urinalysis Section -->
             <h2 class="section-title">Urinalysis</h2>
             <div class="form-group">
